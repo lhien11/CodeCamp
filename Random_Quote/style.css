@@ -1,0 +1,41 @@
+.btn-default, .btn-default:focus {
+  /* background refers either the color or image
+     (if url is provided) */
+  background: #e74c3c;
+  color: #ecf0f1; /*<-- color of text, NOT to be confused with `backgruond-color`*/ 
+  font-weight: bold;
+  width: 100%; /* percentages means the amount of the element's parent container,
+                  whatever that may be */
+}
+.btn-default:hover { 
+  /* these are ADDITIONAL properties that get incorporated into `.btn-default`
+     same properties override what was previously declard; everything else remains */
+  background: #34495e;
+  color: #f1c40f;
+}
+
+#text-container {
+  /* `min-height` allows the element to dynamically change its height
+      as the screen grows. `height`, will fix it in both directions (very rigid) 
+      `max-height` also exists to prevent growing too large */
+  min-height: 170px;
+}
+
+#container {
+  background: rgba(50, 50, 50, 0.6); /* =red, green, blue, alpha. For when you need transparency */
+  color: white;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+body {
+  /* from CSS-tricks 
+     [https://css-tricks.com/perfect-full-page-background-image/]
+  */
+   background: url("http://bit.ly/1Un3Ml2") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
